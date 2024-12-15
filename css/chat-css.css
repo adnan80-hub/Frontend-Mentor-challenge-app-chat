@@ -1,0 +1,351 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(270, 20%, 96%);
+
+}
+
+
+.chat-app {
+    display: flex;
+    align-items: center;
+}
+
+
+.chat-app .background {
+    width: 38%;
+    height: 99vh;
+    background-image: linear-gradient(to bottom , hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-left: -9%;
+    margin-top: -5%;
+}
+
+.phone-app {
+    width: 260px;
+    height: 500px;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 40px;
+    border: 13px solid white;
+    margin-left: -5%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 3%;
+    box-shadow: 8px 0 7px 0 hsl(270deg 7% 64% / 15%);
+    
+}
+
+
+.phone-app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 43px;
+    width: 60%;
+    height: 13px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: white;
+}
+
+.phone-app .heading-app {
+    width: 100%;
+    height: 63px;
+    padding: 11px 5%;
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(to left, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+}
+
+.heading-app .flex-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading-app .name-person {
+    display: flex;
+    align-items: center;
+}
+
+.name-person .icon-app {
+    margin-right: 3px;
+}
+
+.heading-app .img-avatar {
+    background-image: url("../images/avatar.jpg");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 12px;
+    position: relative;
+}
+
+.heading-app .img-avatar::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -2px;
+    width: 6px;
+    height: 6px;
+    background-color: green;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+
+.heading-app .title-head div:first-child {
+    font-size: 11px;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.heading-app .title-head div:last-child {
+    font-size: 8px;
+     color: hsl(276, 100%, 81%); 
+}
+
+.bars {
+    display: block;
+}
+
+.bars div {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 1px; 
+}
+
+
+.phone-app :is(.message-first, .message-second , .message-left-third) {
+    width: 119px;
+    height: 35px;
+    background-color: hsl(276deg 100% 81% / 38%);
+    color: hsl(276, 55%, 52%);
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 5px;
+    font-size: 7px;
+    padding: 7px 16px;
+    margin-left: 8px;
+    margin-top: 8px;
+    line-height: 12px
+}
+
+.phone-app .message-second {
+    padding: 6px 11px;
+}
+
+.phone-app .message-left-third {
+    line-height: 10px;
+    height: 43px;
+    padding: 8px 12px;
+}
+
+.phone-app .images-dogs {
+    width: 96%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+}
+
+.images-dogs img {
+    width: 37px;
+    height: 37px;
+    border-radius: 9px;
+    margin-left: 8px;
+}
+
+.phone-app .into-right ,
+.phone-app .into-right-again {
+    width: 96%;
+    display: flex;
+    justify-content: end;
+    margin-top: 9px;
+}
+
+.into-right .message-right-first {
+    width: 119px;
+    height: 35px;
+    font-size: 7px;
+    padding: 7px 11px;
+    background-color: white;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 13px;
+    line-height: 12px;
+    box-shadow: 0 8px 7px 0 hsl(270deg 7% 64% / 15%);
+}
+
+.into-right-again .message-right-second {
+    width: 79px;
+    height: 22px;
+    font-size: 7px;
+    padding: 5px 9px;
+    background-color: white;
+    line-height: 14px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 5px 7px 0 hsl(270deg 7% 64% / 15%);
+}
+
+.minute-app {
+    width: 150px;
+    height: 39px;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 8px;
+    padding: 0 5%;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 5px;
+}
+
+.minute-app .walk {
+    display: flex;
+    align-items: center;
+}
+.minute-app .walk div:first-child {
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.minute-app .walk div:last-child {
+    color: white;
+    font-size: 7px;
+    margin-left: 8px;
+}
+
+.minute-app .number-app {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+.last-message {
+    width: 92%;
+    height: 34px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 6px;
+    left: 9px;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-message .type-message {
+    color: hsl(206, 6%, 79%);
+    font-size: 9px;
+}
+
+.last-message .icon {
+    width: 25px;
+    height: 25px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+}
+
+.icon .inset-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 2px;
+    transform: rotate(135deg);
+    border-width: 3px;
+    border-style: solid;
+    border-color: white transparent transparent white;
+}
+
+.article-of-booking {
+    width: 500px;
+    margin-left: 7%;
+}
+
+.article-of-booking .heading-book {
+    color: hsl(271, 36%, 24%);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+
+.article-of-booking p {
+    line-height: 27px;
+    color: hsl(270, 7%, 64%) ;
+    font-size: 15px;
+}
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+#### Text
+
+- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
+- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
+- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
+- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
+- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+
+#### Gradients
+
+These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+
+- Light Magenta: hsl(293, 100%, 63%)
+- Light Violet: hsl(264, 100%, 61%)
+
+### Secondary
+
+- White: hsl(0, 0%, 100%)
+- Light Grayish Violet (app background): hsl(270, 20%, 96%)
+- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
+- Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500, 700
